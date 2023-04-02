@@ -5,4 +5,14 @@ img {
 .float-left {
   border: 1px solid black;
   float: left;
+}
+
+.wrapper {
+  background: green;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }/*# sourceMappingURL=style.css.map */
