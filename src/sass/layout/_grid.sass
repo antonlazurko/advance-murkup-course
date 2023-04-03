@@ -1,6 +1,5 @@
 .row
     max-width: $grid-width
-    background: tomato
     margin: 0 auto
     @include clearfix
     &:not(:last-child)
@@ -25,8 +24,6 @@
     width: calc((3 * (100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal})
 
 [class^="col-"]
-    background: blue
-    color: white
     float: left
     &:not(:last-child)
         margin-right: $gutter-horizontal
