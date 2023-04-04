@@ -279,19 +279,59 @@ body {
   color: #fff;
   transition: all 0.7s ease-out;
   backface-visibility: hidden;
-}
-.card-tour__side_front {
-  background: yellow;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 .card-tour__side_back {
   background: linear-gradient(90.05deg, rgb(186, 133, 84) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
   transform: rotateY(180deg);
 }
 .card-tour:hover .card-tour__side_front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card-tour:hover .card-tour__side_back {
   transform: rotateY(0deg);
+}
+.card-tour__img {
+  height: 21rem;
+  background-blend-mode: hard-light;
+  background: rgb(186, 133, 84) url(../images/photo-tour-1.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+.card-tour__title {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+  top: 17rem;
+  right: 0rem;
+}
+.card-tour__span {
+  background: linear-gradient(90.05deg, rgb(186, 133, 84), rgb(161, 79, 3));
+  padding: 1rem 2rem 0.3rem 2rem;
+}
+.card-tour__span_2 {
+  position: absolute;
+  top: 3.4rem;
+  right: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+.card-tour__description ul {
+  margin: 0 auto;
+  width: 75%;
+  list-style: none;
+}
+.card-tour__description ul li {
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  color: #777777;
+  border-bottom: 0.1rem solid #777777;
+}
+.card-tour__description ul li:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .header {

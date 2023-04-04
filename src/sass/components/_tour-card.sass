@@ -12,13 +12,53 @@
         color: $color-white
         transition: all .7s ease-out
         backface-visibility: hidden
+        box-shadow: $box-shadow-light
         &_front
-            background: yellow
         &_back
             background: linear-gradient(90.05deg, $color-light-brown 0.03%, rgba($color-dark-brown, 0.7) 99.94%)
             transform: rotateY(180deg)
 
     &:hover &__side_front
-        transform: rotateY(180deg)
+        transform: rotateY(-180deg)
     &:hover &__side_back
         transform: rotateY(0deg)
+
+    &__img
+        height: 21rem
+        background-blend-mode: hard-light
+        background: $color-light-brown url(../images/photo-tour-1.jpg)
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+
+    &__title
+        font-size: 2.8rem
+        letter-spacing: .2rem
+        font-weight: 300
+        text-transform: uppercase
+        text-align: right
+        position: absolute
+        top: 17rem
+        right: 0rem
+    &__span
+        background: linear-gradient(90.05deg, $color-light-brown, $color-dark-brown)
+        padding: 1rem 2rem .3rem 2rem
+        &_1
+        &_2
+            position: absolute
+            top: 3.4rem
+            right: 0rem
+            padding-top: 0rem
+            padding-bottom: 1rem
+
+    &__description
+        ul
+            margin: 0 auto
+            width: 75%
+            list-style: none
+            li
+                text-align: center
+                font-size: $font-size-paragraph
+                letter-spacing: .2rem
+                color: $color-gray
+                border-bottom: .1rem solid $color-gray
+                &:not(:last-child)
+                    margin-bottom: 2rem
