@@ -82,13 +82,16 @@ body {
   font-weight: 800;
   background: linear-gradient(90.05deg, rgb(186, 133, 84) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   transition: all 0.4s;
   backface-visibility: hidden;
 }
 .title-secondary:hover {
   transform: skewX(15deg) skewY(2deg) scale(1.1);
   text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+.title-secondary_white {
+  color: #fff;
 }
 
 .title-third {
@@ -157,7 +160,7 @@ body {
   position: relative;
   padding: 1.5rem 4rem;
   border-radius: 5rem;
-  background: #F7F7F7;
+  background: #fff;
   font-size: 2rem;
   transition: all 0.3s;
 }
@@ -180,7 +183,7 @@ body {
   left: 0;
   display: inline-block;
   z-index: -1;
-  background: #F7F7F7;
+  background: #fff;
   width: 100%;
   height: 100%;
   border-radius: 5rem;
@@ -366,6 +369,31 @@ body {
   font-weight: 500;
 }
 
+.feedback-card {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skew(-15deg);
+}
+.feedback-card > * {
+  transform: skew(15deg);
+}
+.feedback-card__img {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 4rem;
+  float: left;
+  border-radius: 100rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  overflow: hidden;
+}
+.feedback-card__img img {
+  height: 100%;
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -434,7 +462,7 @@ body {
 
 .section-about {
   padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-bottom: 20rem;
 }
 
 .section-adventure {
@@ -449,4 +477,9 @@ body {
 
 .section-tours {
   padding-top: 21rem;
+  margin-bottom: 8rem;
+}
+
+.section-feedback {
+  padding-top: 8rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -39,12 +39,14 @@ body
     font-weight: 800
     background: linear-gradient(90.05deg, $color-light-brown 0.03%, rgba($color-dark-brown, 0.7) 99.94%)
     -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    color: transparent
     transition: all .4s
     backface-visibility: hidden
     &:hover
         transform: skewX(15deg) skewY(2deg) scale(1.1)
         text-shadow: $shadow-h2
+    &_white
+        color: $color-white
 
 .title-third
     font-size: $font-size-h3

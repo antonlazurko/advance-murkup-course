@@ -1,0 +1,20 @@
+.feedback-card
+    width: 80%
+    background: rgba($color-white, .75)
+    box-shadow: $box-shadow
+    margin: 0 auto
+    padding: 6rem
+    transform: skew(-15deg)
+    & > *
+        transform: skew(15deg)
+    &__img
+        width: 15rem
+        height: 15rem
+        margin-right: 4rem
+        float: left
+        border-radius: 100rem
+        shape-outside: circle(50% at 50% 50%)
+        -webkit-shape-outside: circle(50% at 50% 50%)
+        overflow: hidden
+        img
+            height: 100%
