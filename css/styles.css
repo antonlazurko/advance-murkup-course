@@ -149,6 +149,8 @@ body {
 }
 
 .container {
+  position: relative;
+  z-index: 0;
   background-color: #F7F7F7;
 }
 
@@ -418,6 +420,26 @@ body {
   transform: scale(1);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -505,5 +527,6 @@ body {
 }
 
 .section-feedback {
-  padding-top: 8rem;
+  position: relative;
+  padding: 8rem 0;
 }/*# sourceMappingURL=styles.css.map */
