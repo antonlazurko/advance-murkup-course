@@ -1,0 +1,80 @@
+.book
+    height: 50rem
+    background: linear-gradient(110deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 57%, rgba(186,133,84,0.8) 57%, rgba(161,79,3,0.8) 100%), url(../images/bg-form.jpg) center / cover no-repeat
+    box-shadow: $box-shadow
+    border-radius: 0.5rem
+    overflow: hidden
+
+.form
+    width: 60%
+    padding-top: 5rem
+    padding-left: 5rem
+
+    &__group:not(:last-child)
+        margin-bottom: 2rem
+    &__group:nth-child(4)
+        margin-bottom: 4rem
+
+    &__input
+        font-size: $font-size-paragraph
+        letter-spacing: .2rem
+        font-weight: 400
+        color: $color-black
+        padding: 2rem 0rem 2rem 2rem
+        border: none
+        border-bottom: .3rem solid transparent
+        border-radius: .5rem
+        width: 75%
+        &:focus
+            outline: none
+            border-bottom: .3rem solid $color-light-green
+            box-shadow: $box-shadow
+        &:focus:invalid
+            border-bottom: .3rem solid $color-invalid-red
+
+    &__input:placeholder-shown + &__label
+        opacity: 0
+        visibility: none
+        transform: translateX(.49rem) translateY(-4rem)
+
+    &__label
+        display: block
+        margin-top: 1rem
+        margin-left: 1.5rem
+        font-size: $font-size-paragraph
+        letter-spacing: .2rem
+        font-weight: 400
+        transition: .7s all
+    &__group-radio
+        width: 40%
+        display: inline-block
+    &__label-radio
+        position: relative
+        cursor: pointer
+        padding-left: 4rem
+    &__input-radio
+        display: none
+    &__button-radio
+        display: block
+        position: absolute
+        top: -0.4rem
+        left: 0
+        height: 3rem
+        width: 3rem
+        border-radius: 50%
+        border: .5rem solid $color-dark-brown
+        &::after
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            content: ''
+            display: block
+            width: 1.5rem
+            height: 1.5rem
+            border-radius: 50%
+            background-color: $color-dark-brown
+            opacity: 0
+            transition: 0.3s all
+    &__input-radio:checked ~ &__label-radio &__button-radio::after
+        opacity: 1
