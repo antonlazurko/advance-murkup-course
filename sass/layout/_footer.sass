@@ -11,7 +11,7 @@
         &:not(last-child)
             margin-right: 5rem
     &__link
-        &:link
+        &:link, &:visited
             display: inline-block
             color: $color-gray-light
             text-decoration: none
@@ -20,7 +20,6 @@
             letter-spacing: .2rem
             font-weight: 300
             transition: 0.3s all
-        &:visited
         &:active
         &:hover
             transform: rotate(5deg) scale(1.2)

@@ -580,7 +580,7 @@ body {
 .footer__item:not(last-child) {
   margin-right: 5rem;
 }
-.footer__link:link {
+.footer__link:link, .footer__link:visited {
   display: inline-block;
   color: #F7F7F7;
   text-decoration: none;
