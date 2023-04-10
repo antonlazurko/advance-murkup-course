@@ -618,20 +618,23 @@ body {
   right: 8rem;
   top: 8rem;
   z-index: 100;
-  transform: scale(80);
+  transition: 0.3s all;
 }
 .navigation__nav {
-  width: 100%;
+  width: 0;
   height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 150;
+  opacity: 0;
+  transition: all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .navigation__list {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   list-style: none;
 }
@@ -657,6 +660,13 @@ body {
   background-position: 100%;
   color: rgb(186, 133, 84);
   transform: translateX(1rem);
+}
+.navigation__toggle:checked ~ .navigation__background {
+  transform: scale(80);
+}
+.navigation__toggle:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1;
 }
 
 .row {
