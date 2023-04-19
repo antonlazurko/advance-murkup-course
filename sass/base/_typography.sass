@@ -30,7 +30,9 @@ body
         letter-spacing: .5rem
         animation: rightToLeft 1.7s ease 1s
         backface-visibility: hidden
-
+        @include respond(tab-land)
+            font-size: 3.5rem
+            margin-bottom: 3.5rem
 .title-secondary
     display: inline-block
     font-size: $font-size-h2
@@ -47,6 +49,8 @@ body
         text-shadow: $shadow-h2
     &_white
         color: $color-white
+    @include respond(tab-land)
+        font-size: 3rem
 
 .title-third
     font-size: $font-size-h3
@@ -54,9 +58,13 @@ body
     text-transform: uppercase
     line-height: 140%
     font-weight: 700
+    @include respond(tab-land)
+        font-size: 1.8rem
 
 .paragraph
     font-size: $font-size-paragraph
     letter-spacing: .2rem
     line-height: 140%
     font-weight: 400
+    @include respond(tab-land)
+        font-size: 1.5rem

@@ -73,6 +73,12 @@ body {
   animation: rightToLeft 1.7s ease 1s;
   backface-visibility: hidden;
 }
+@media (max-width: 1240px) {
+  .title-first__secondary {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
 
 .title-secondary {
   display: inline-block;
@@ -93,6 +99,11 @@ body {
 .title-secondary_white {
   color: #fff;
 }
+@media (max-width: 1240px) {
+  .title-secondary {
+    font-size: 3rem;
+  }
+}
 
 .title-third {
   font-size: 2rem;
@@ -101,12 +112,22 @@ body {
   line-height: 140%;
   font-weight: 700;
 }
+@media (max-width: 1240px) {
+  .title-third {
+    font-size: 1.8rem;
+  }
+}
 
 .paragraph {
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   line-height: 140%;
   font-weight: 400;
+}
+@media (max-width: 1240px) {
+  .paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 .text-align-center {
@@ -142,7 +163,7 @@ body {
 html {
   font-size: 62.5%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   html {
     font-size: 56.25%;
   }
@@ -186,6 +207,12 @@ body {
   font-size: 2rem;
   transition: all 0.3s;
   border: none;
+  padding: 1.2rem 3.7rem;
+}
+@media (max-width: 1240px) {
+  .btn, .btn:link, .btn:visited {
+    font-size: 1.5rem;
+  }
 }
 .btn:hover {
   transform: translateY(-0.4rem);
@@ -378,6 +405,11 @@ body {
 .card-tour__description ul li:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 1240px) {
+  .card-tour__description ul li:not(:last-child) {
+    font-size: 1.5rem;
+  }
+}
 .card-tour__backSide-box {
   position: absolute;
   top: 50%;
@@ -478,7 +510,7 @@ body {
 }
 
 .form {
-  width: 60%;
+  width: 70%;
   padding-top: 5rem;
   padding-left: 5rem;
 }
@@ -487,6 +519,14 @@ body {
 }
 .form__group:nth-child(4) {
   margin-bottom: 4rem;
+}
+@media (max-width: 1240px) {
+  .form__group:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .form__group:nth-child(4) {
+    margin-bottom: 2.5rem;
+  }
 }
 .form__input {
   font-size: 1.6rem;
@@ -522,16 +562,26 @@ body {
   transition: 0.7s all;
 }
 .form__group-radio {
-  width: 40%;
   display: inline-block;
+}
+.form__group-radio:not(:last-child) {
+  margin-right: 2rem;
+}
+@media (max-width: 1240px) {
+  .form__group-radio {
+    display: block;
+  }
+  .form__group-radio:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.form__input-radio {
+  display: none;
 }
 .form__label-radio {
   position: relative;
   cursor: pointer;
   padding-left: 4rem;
-}
-.form__input-radio {
-  display: none;
 }
 .form__button-radio {
   display: block;
@@ -582,6 +632,11 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+@media (max-width: 1240px) {
+  .header__box {
+    top: 50%;
+  }
+}
 
 .footer {
   background: #333333;
@@ -599,6 +654,11 @@ body {
 }
 .footer__item:not(last-child) {
   margin-right: 5rem;
+}
+@media (max-width: 1240px) {
+  .footer__item:not(last-child) {
+    margin-right: 1.6rem;
+  }
 }
 .footer__link:link, .footer__link:visited {
   display: inline-block;
@@ -743,6 +803,11 @@ body {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
+@media (max-width: 1240px) {
+  .row {
+    max-width: 90.1rem;
+  }
+}
 
 .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
@@ -751,6 +816,11 @@ body {
 .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
+@media (max-width: 1240px) {
+  .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3);
+  }
+}
 
 .col-2-of-3 {
   width: calc((2 * (100% - 2 * 6rem) / 3) + 6rem);
@@ -758,6 +828,11 @@ body {
 
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+@media (max-width: 1240px) {
+  .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4);
+  }
 }
 
 .col-2-of-4 {
@@ -774,10 +849,20 @@ body {
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
 }
+@media (max-width: 1240px) {
+  [class^=col-]:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
 
 .section-about {
   padding-top: 8rem;
   padding-bottom: 20rem;
+}
+@media (max-width: 1240px) {
+  .section-about {
+    padding-bottom: 13rem;
+  }
 }
 
 .section-adventure {
@@ -788,6 +873,11 @@ body {
 }
 .section-adventure > * {
   transform: skewY(-7deg);
+}
+@media (max-width: 1240px) {
+  .section-adventure {
+    padding: 15rem 0;
+  }
 }
 
 .section-tours {
