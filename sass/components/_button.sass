@@ -9,8 +9,10 @@
         transition: all .3s
         border: none
         @include respond(tab-land)
-            font-size: 1.5rem
-        padding: 1.2rem 3.7rem
+            font-size: 1.8rem
+            padding: 1.2rem 3.7rem
+        @include respond(tab-port)
+            padding: 2rem 5rem
     &:hover
         transform: translateY(-0.4rem)
         box-shadow: $box-shadow
