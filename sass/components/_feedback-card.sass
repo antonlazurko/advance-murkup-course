@@ -5,9 +5,14 @@
     margin: 0 auto
     padding: 6rem
     transform: skew(330deg)
-
+    @include respond(tab-port)
+        transform: skew(350deg)
+        padding: 3rem
     & > *
         transform: skew(-330deg)
+        @include respond(tab-port)
+            transform: skew(-350deg)
+            text-align: center
 
     &__img
         position: relative
@@ -19,6 +24,10 @@
         shape-outside: circle(50% at 50% 50%)
         -webkit-shape-outside: circle(50% at 50% 50%)
         overflow: hidden
+        @include respond(tab-port)
+            float: none
+            margin: 0 auto
+            margin-bottom: 3rem
         img
             height: 100%
             transform: scale(1.2)
