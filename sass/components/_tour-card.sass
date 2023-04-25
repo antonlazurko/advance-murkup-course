@@ -3,7 +3,7 @@
     height: 50rem
     perspective: 150rem
     -moz-perspective: 150rem
-    @include respond(tab-port)
+    @media only screen and (max-width: 900px), (hover: none)
         height: auto
     &__side
         position: absolute
@@ -17,7 +17,7 @@
         border-radius: .5rem
         overflow: hidden
         box-shadow: $box-shadow-light
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover: none)
             height: auto
             position: relative
         &_front
@@ -26,7 +26,7 @@
         &_back
             background: linear-gradient(120deg, $color-light-brown, $color-dark-brown)
             transform: rotateY(180deg)
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover: none)
                 transform: rotateY(0deg)
                 margin-top: -11rem
                 padding: 5rem
@@ -50,7 +50,7 @@
             background: $color-light-brown url(../images/photo-tour-2.jpg) center / cover no-repeat
         &_3
             background: $color-light-brown url(../images/photo-tour-3.jpg) center / cover no-repeat
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover: none)
             height: 30rem
     &__title
         font-size: 2.8rem
@@ -99,7 +99,7 @@
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover: none)
             position: relative
             top: 0
             left: 0
